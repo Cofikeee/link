@@ -1,6 +1,6 @@
 WITH tenant AS (SELECT *
                 FROM tenant
-                WHERE host = 'bronevik.hr-link.ru'),
+                WHERE host = 'domen.hr-link.ru'),
      tenant_package AS (SELECT *
                         FROM tenant_license_package
                         WHERE tenant_id = (SELECT id FROM tenant)
